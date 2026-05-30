@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+KIND:individual
+FN:Velton Gooden Jr.
+N:Gooden;Velton;;;Jr.
+TITLE:Founder & Principal Strategist
+ORG:VGJ Digital
+TEL;TYPE=WORK,VOICE:+18769009999
+EMAIL;TYPE=WORK,INTERNET:velton@vgjdigital.com
+URL;TYPE=WORK:https://vgjdigital.com/
+PHOTO;TYPE=PNG;VALUE=URI:https://card.vgjdigital.com/assets/team/velton-gooden-jr.png
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/veltongoodenjr/
+NOTE:Founder and Principal Strategist at VGJ Digital. Strategy\, website direction\, client experience\, creative execution\, and final approvals.
+CATEGORIES:VGJ Digital,Strategy,Websites,Client Experience
+ADR;TYPE=WORK:;;;Jamaica;;;JM
+END:VCARD

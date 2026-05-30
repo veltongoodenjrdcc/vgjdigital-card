@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+KIND:individual
+FN:Judith Gooden
+N:Gooden;Judith;;;
+TITLE:Client Relations Executive
+ORG:VGJ Digital
+TEL;TYPE=WORK,VOICE:+18769009999
+EMAIL;TYPE=WORK,INTERNET:hello@vgjdigital.com
+URL;TYPE=WORK:https://vgjdigital.com/
+PHOTO;TYPE=PNG;VALUE=URI:https://card.vgjdigital.com/assets/team/judith-gooden.png
+NOTE:Client Relations Executive at VGJ Digital. Client follow-up\, payment support\, intake reminders\, and care coordination.
+CATEGORIES:VGJ Digital,Client Relations,Client Care,Payment Support
+ADR;TYPE=WORK:;;;Jamaica;;;JM
+END:VCARD

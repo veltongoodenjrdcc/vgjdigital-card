@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+KIND:individual
+FN:Neko Whittaker
+N:Whittaker;Neko;;;
+TITLE:Business Development Executive
+ORG:VGJ Digital
+TEL;TYPE=WORK,VOICE:+18769009999
+EMAIL;TYPE=WORK,INTERNET:hello@vgjdigital.com
+URL;TYPE=WORK:https://vgjdigital.com/
+PHOTO;TYPE=PNG;VALUE=URI:https://card.vgjdigital.com/assets/team/neko-whittaker.png
+NOTE:Business Development Executive at VGJ Digital. Lead movement\, sales conversations\, follow-up support\, and approved client communication.
+CATEGORIES:VGJ Digital,Business Development,Sales,Client Communication
+ADR;TYPE=WORK:;;;Jamaica;;;JM
+END:VCARD
