@@ -1136,17 +1136,17 @@ h1 {
   }
 
   .button {
-    min-height: 44px;
-    padding: 8px 12px;
+    min-height: 54px;
+    padding: 11px 14px;
     border-radius: 13px;
-    font-size: 0.82rem;
+    font-size: 0.92rem;
   }
 
   .icon {
-    width: 28px;
-    height: 28px;
-    border-radius: 9px;
-    font-size: 0.8rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    font-size: 0.88rem;
   }
 
   .divider { margin: 8px 14px 0; }
@@ -1169,18 +1169,23 @@ h1 {
   .save-card__sub { font-size: 0.62rem; line-height: 1.2; }
 
   .footer-tools {
-    padding: 6px 16px 5px;
-    gap: 10px;
+    padding: 14px 16px 10px;
+    gap: 14px;
   }
 
-  .quick-actions { gap: 8px; }
+  .quick-actions { gap: 12px; }
+  .quick-actions .social-link {
+    width: 46px;
+    height: 46px;
+    font-size: 1.05rem;
+  }
 
   .footer-note {
-    font-size: 0.66rem;
-    line-height: 1.3;
+    font-size: 0.86rem;
+    line-height: 1.4;
   }
 
-  .footer-note strong { margin-bottom: 1px; }
+  .footer-note strong { margin-bottom: 3px; }
 
   .social-row {
     padding: 2px 16px calc(60px + env(safe-area-inset-bottom, 0px));
@@ -1229,16 +1234,16 @@ h1 {
   .actions { gap: 5px; }
 
   .button {
-    min-height: 41px;
-    padding: 7px 12px;
-    font-size: 0.78rem;
+    min-height: 48px;
+    padding: 9px 12px;
+    font-size: 0.88rem;
   }
 
   .icon {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     border-radius: 8px;
-    font-size: 0.74rem;
+    font-size: 0.82rem;
   }
 
   .divider { margin: 7px 14px 0; }
@@ -1248,9 +1253,10 @@ h1 {
   .save-card__title { font-size: 0.77rem; }
   .save-card__sub { font-size: 0.58rem; }
 
-  .footer-tools { padding: 4px 16px 5px; gap: 8px; }
-  .quick-actions { gap: 7px; }
-  .footer-note { font-size: 0.62rem; line-height: 1.26; }
+  .footer-tools { padding: 10px 16px 7px; gap: 12px; }
+  .quick-actions { gap: 10px; }
+  .quick-actions .social-link { width: 40px; height: 40px; font-size: 0.96rem; }
+  .footer-note { font-size: 0.78rem; line-height: 1.36; }
 
   .social-row {
     padding: 1px 16px calc(58px + env(safe-area-inset-bottom, 0px));
@@ -1277,7 +1283,7 @@ h1 {
   .bio { font-size: 0.66rem; line-height: 1.24; }
 
   .footer-tools { padding: 3px 16px 4px; }
-  .footer-note { font-size: 0.6rem; }
+  .footer-note { font-size: 0.72rem; }
   .social-row { padding-bottom: calc(54px + env(safe-area-inset-bottom, 0px)); }
   .social-link { width: 30px; height: 30px; font-size: 0.74rem; }
 }
@@ -1313,23 +1319,24 @@ h1 {
   }
 
   .button {
-    min-height: 36px;
-    padding: 6px 12px;
+    min-height: 42px;
+    padding: 8px 12px;
     border-radius: 12px;
-    font-size: 0.76rem;
+    font-size: 0.82rem;
   }
 
   .icon {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border-radius: 8px;
-    font-size: 0.72rem;
+    font-size: 0.78rem;
   }
 
   .divider { margin: 6px 14px 0; }
   .save-wrap { padding: 6px 14px 5px; }
-  .footer-tools { padding: 2px 14px 4px; gap: 7px; }
-  .quick-actions { gap: 6px; }
+  .footer-tools { padding: 8px 14px 6px; gap: 10px; }
+  .quick-actions { gap: 8px; }
+  .quick-actions .social-link { width: 36px; height: 36px; font-size: 0.88rem; }
   .social-row { padding: 0 14px calc(52px + env(safe-area-inset-bottom, 0px)); gap: 7px; }
   .social-row__label { font-size: 0.58rem; }
   .social-link { width: 29px; height: 29px; font-size: 0.72rem; }
