@@ -1082,7 +1082,7 @@ h1 {
 
 @media (max-width: 480px) {
   .card {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .hero {
@@ -1171,6 +1171,7 @@ h1 {
   .footer-tools {
     padding: 14px 16px 10px;
     gap: 14px;
+    margin-top: auto;
   }
 
   .quick-actions { gap: 12px; }
