@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://card.vgjdigital.com/sitemap.xml
+# Keep crawling allowed so page-level noindex and X-Robots-Tag directives can be seen.

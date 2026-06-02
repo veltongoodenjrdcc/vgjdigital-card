@@ -1,0 +1,17 @@
+# Local tool and deployment state
+.claude/
+.wrangler/
+
+# Dependencies and environment files
+node_modules/
+.env
+.env.*
+!.env.example
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# GitHub Pages artifact; not used by Cloudflare Pages
+.nojekyll
