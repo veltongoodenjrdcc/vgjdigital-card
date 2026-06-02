@@ -1082,17 +1082,17 @@ h1 {
 
 @media (max-width: 480px) {
   .card {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .hero {
-    padding: 14px 18px 9px;
-    padding: calc(14px + env(safe-area-inset-top, 0px)) 18px 9px;
+    padding: 20px 18px 9px;
+    padding: calc(20px + env(safe-area-inset-top, 0px)) 18px 9px;
     gap: 7px;
   }
 
-  .logo { max-height: 36px; max-width: 200px; }
-  .brand-row .eyebrow { font-size: 0.68rem; }
+  .logo { max-height: 42px; max-width: 220px; }
+  .brand-row .eyebrow { font-size: 0.74rem; }
   .profile-block {
     flex-direction: row;
     align-items: center;
@@ -1171,7 +1171,6 @@ h1 {
   .footer-tools {
     padding: 6px 16px 5px;
     gap: 10px;
-    margin-top: auto;
   }
 
   .quick-actions { gap: 8px; }
@@ -1211,12 +1210,12 @@ h1 {
 
 @media (max-width: 480px) and (max-height: 780px) {
   .hero {
-    padding: 10px 18px 6px;
-    padding: calc(10px + env(safe-area-inset-top, 0px)) 18px 6px;
+    padding: 14px 18px 6px;
+    padding: calc(14px + env(safe-area-inset-top, 0px)) 18px 6px;
     gap: 5px;
   }
 
-  .logo { max-height: 30px; }
+  .logo { max-height: 34px; }
   .profile-block { gap: 10px; }
   .profile-copy { gap: 3px; }
   .portrait-wrap { width: 82px; height: 82px; padding: 2px; }
@@ -1286,12 +1285,12 @@ h1 {
 @media (max-width: 599px) and (max-height: 620px), (max-width: 320px) and (max-height: 700px) {
   .hero {
     justify-content: flex-start;
-    padding: 8px 18px 6px;
-    padding: calc(8px + env(safe-area-inset-top, 0px)) 18px 6px;
+    padding: 10px 18px 6px;
+    padding: calc(10px + env(safe-area-inset-top, 0px)) 18px 6px;
     gap: 5px;
   }
 
-  .logo { max-height: 26px; }
+  .logo { max-height: 28px; }
   .profile-block { gap: 9px; }
   .profile-copy { gap: 2px; }
 
