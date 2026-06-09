@@ -16,7 +16,8 @@ $publicItems = @(
     "assets",
     "velton",
     "judith",
-    "neko"
+    "neko",
+    "kiana"
 )
 
 New-Item -ItemType Directory -Path $publishDir | Out-Null
