@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VGJ Digital — Hero Effects Demo</title>
+  <style>
+    /* ── Base reset ─────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #071420;
+      color: #f0f9ff;
+      font-family: system-ui, sans-serif;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      gap: 3rem;
+    }
+    section {
+      text-align: center;
+    }
+    h2 {
+      margin: 0 0 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(240,249,255,0.5);
+    }
+
+    /* ── Effect 1: animated cursor ──────────────────── */
+    .click-mark {
+      position: relative;
+      display: inline-grid;
+      width: 0.88em;
+      height: 1.08em;
+      flex: 0 0 auto;
+      place-items: center;
+      transform-origin: 65% 72%;
+      will-change: transform;
+      font-size: 2rem;
+    }
+    .click-mark::before {
+      width: 0.82em;
+      height: 1em;
+      background: #fff;
+      clip-path: polygon(0 0, 0 88%, 28% 65%, 42% 100%, 58% 93%, 44% 60%, 78% 60%);
+      content: "";
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .click-mark {
+        animation: cursorClickLoop 3s cubic-bezier(0.35, 0, 0.18, 1) infinite;
+      }
+      @keyframes cursorClickLoop {
+        0%, 46%, 100% { transform: translate3d(1.5px, 1.8px, 0) scale(1); }
+        64%, 72%       { transform: translate3d(0, -1.4px, 0) scale(1); }
+        78%            { transform: translate3d(0, -1.4px, 0) scale(0.92); }
+        86%            { transform: translate3d(0, -1.4px, 0) scale(1); }
+      }
+    }
+
+    /* ── Effect 2: gradient clip text ───────────────── */
+    .gradient-text {
+      background: linear-gradient(180deg, #1aa7ec 0%, #19a0da 48%, #188eaf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 1.5rem;
+      font-weight: 850;
+    }
+
+    /* ── Combined tagline row ────────────────────────── */
+    .tagline-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.42rem;
+      font-size: 1.1rem;
+      font-weight: 850;
+      line-height: 1.15;
+    }
+    .tagline-row .click-mark { font-size: 1.1rem; }
+    .tagline-row .gradient-text { font-size: inherit; }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>Effect 1 — Animated cursor</h2>
+    <span class="click-mark" aria-hidden="true"></span>
+  </section>
+
+  <section>
+    <h2>Effect 2 — Gradient clip text</h2>
+    <span class="gradient-text">Make your brand click.</span>
+  </section>
+
+  <section>
+    <h2>Combined — tagline row (cursor + gradient text)</h2>
+    <span class="tagline-row">
+      <span class="click-mark" aria-hidden="true"></span>
+      <span class="gradient-text">Make your brand click.</span>
+    </span>
+  </section>
+
+</body>
+</html>

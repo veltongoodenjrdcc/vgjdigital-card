@@ -1,0 +1,71 @@
+/*
+  VGJ Digital — Hero Effects Kit
+  Two drop-in effects for Digital Business Card pages.
+
+  1. .click-mark  — animated cursor icon (CSS-only, no JS needed)
+  2. .gradient-text — gradient clip text
+  3. .tagline-row — flex row combining both
+*/
+
+/* ── Animated cursor ─────────────────────────────────────────── */
+
+.click-mark {
+  position: relative;
+  display: inline-grid;
+  width: 0.88em;
+  height: 1.08em;
+  flex: 0 0 auto;
+  place-items: center;
+  transform-origin: 65% 72%;
+  will-change: transform;
+}
+
+.click-mark::before {
+  width: 0.82em;
+  height: 1em;
+  background: currentColor; /* inherits text color — override with a specific color if needed */
+  clip-path: polygon(0 0, 0 88%, 28% 65%, 42% 100%, 58% 93%, 44% 60%, 78% 60%);
+  content: "";
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .click-mark {
+    animation: cursorClickLoop 3s cubic-bezier(0.35, 0, 0.18, 1) infinite;
+  }
+
+  @keyframes cursorClickLoop {
+    0%, 46%, 100% {
+      transform: translate3d(1.5px, 1.8px, 0) scale(1);
+    }
+    64%, 72% {
+      transform: translate3d(0, -1.4px, 0) scale(1);
+    }
+    78% {
+      transform: translate3d(0, -1.4px, 0) scale(0.92);
+    }
+    86% {
+      transform: translate3d(0, -1.4px, 0) scale(1);
+    }
+  }
+}
+
+/* ── Gradient clip text ──────────────────────────────────────── */
+
+.gradient-text {
+  background: linear-gradient(180deg, #1aa7ec 0%, #19a0da 48%, #188eaf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ── Tagline row (cursor + text side by side) ────────────────── */
+
+.tagline-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  font-size: clamp(0.82rem, 1.18vw, 0.96rem);
+  font-weight: 850;
+  line-height: 1.15;
+  white-space: nowrap;
+}

@@ -202,23 +202,52 @@ a { color: inherit; text-decoration: none; }
   backface-visibility: hidden;
 }
 
-.click-mark i {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  -webkit-text-fill-color: #fff;
-  font-size: 0.8em;
+.click-mark::before {
+  width: 0.82em;
+  height: 1em;
+  background: #fff;
+  clip-path: polygon(0 0, 0 88%, 28% 65%, 42% 100%, 58% 93%, 44% 60%, 78% 60%);
+  content: "";
 }
 
-.click-mark::before,
-.click-mark::after {
-  content: none;
+.click-target {
+  position: relative;
+  display: inline-block;
+}
+
+.click-target .click-mark {
+  position: absolute;
+  right: -0.2em;
+  bottom: -0.24em;
+  left: auto;
+  top: auto;
+  z-index: 1;
+}
+
+.click-word {
+  display: inline-block;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.brand-row .click-word,
+.directory__tagline .click-word {
+  background: linear-gradient(180deg, #2cb9ee 0%, #1ba5d8 43%, #38b8e6 53%, #1498cc 66%, #108fc4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .brand-row .click-mark,
   .directory__tagline .click-mark {
     animation: cursorClickLoop 3s cubic-bezier(0.35, 0, 0.18, 1) infinite;
+  }
+
+  .brand-row .click-word,
+  .directory__tagline .click-word {
+    animation: wordClickReact 3s cubic-bezier(0.35, 0, 0.18, 1) infinite;
   }
 }
 
@@ -238,6 +267,13 @@ a { color: inherit; text-decoration: none; }
   86% {
     transform: translate3d(0, -1.4px, 0) scale(1);
   }
+}
+
+@keyframes wordClickReact {
+  0%, 76%, 100% { transform: scale(1); }
+  82% { transform: scale(0.85); }
+  90% { transform: scale(1.07); }
+  96% { transform: scale(1); }
 }
 
 h1 {
